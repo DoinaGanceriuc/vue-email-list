@@ -10,7 +10,7 @@
 
         <div id="root">
 
-            <ul>
+            <ul v-if="listRandomMail.length == 10">
                 <li v-for="singleMail in listRandomMail">{{singleMail}}</li>
             </ul>
 

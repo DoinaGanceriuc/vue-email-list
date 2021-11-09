@@ -14,11 +14,11 @@ const app = new Vue ({
         listRandomMail: []
 
     },
-    mounted() {
+   mounted() {
 
         let i = 0;
         while (i < 10) {
-            axios
+           axios
                 .get("https://flynn.boolean.careers/exercises/api/random/mail")
                 .then(response => {            
                     this.randomMail = response.data.response
